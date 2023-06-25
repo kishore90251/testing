@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+    <title>Spiaon</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png"  href="img/logo1.jpg">
+    <link rel="icon" type="image/png"  href="img/logo1.jpg">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    <link rel="stylesheet" defer="" href="css/style2.css">
+   
+      
+     <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js" defer></script>
+      <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js" defer></script>
+      
+    <script src="js/firebase.js" defer></script>
+    <script src="js/navbarScript.js" defer></script>
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-TY4SLTQ5N2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+  
+      gtag('config', 'G-TY4SLTQ5N2');
+    </script>
+    
+  </head>
+<body><body onscroll="closeMenu()">
+    <header>
+      <div class="header__mainOuter headerWeb">
+        <div class="header__main">
+          <div class="header__menu">
+            <div class="brandLogoOuter">
+              <img src="img/my.jpg" style="width: 120px; height: 75px; ;" class="applogoImage">
+            </div>
+  
+            <div class="header__menuInside">
+              <nav class="navbars">
+                <ul class="nav-menus">
+                  <li class="nav-items">
+                    <a href="#about" class="nav-links">About</a>
+                  </li>
+                  <li class="nav-items">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVe6UWI3HdU99tTEYSrlAv-igx11yAngLY7VrAS4LJWekyOQ/viewform" target="_blank" class="nav-links">Career</a>
+                  </li>
+                  <li class="nav-items">
+                    <a href="#contact" class="nav-links">Contact</a>
+                  </li>
+                 
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <header class="headerMobile">
+        <div class="navContainer">
+          <div class="navContainerLeft">
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+          <div class="navContainerRight" onclick="callHomePage()">
+            <img src="img/my.jpg" style="width: 120px; height: 80px;" class="appLogoImage">
+          </div>
+        </div>
+        <div class="header__menuInside">
+          <nav class="navbar">
+            <ul class="nav-menu">
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVe6UWI3HdU99tTEYSrlAv-igx11yAngLY7VrAS4LJWekyOQ/viewform" target="_blank" class="nav-links">Career</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">FAQ’s</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <section>
+        <marquee direction="left" scrollamount="10" style="margin: 0" id="displaySlotsBooked">
+          <p style="margin: 0px; font-size: 20px; color: green;" id="infoText">Enrolment opened. Please contact support team for enquiries🙏</p>
+        </marquee>
+      </section>
+  
+      <section>
+        <div class="mainBannerContainer">
+          <h1 class="mainBannerContainerText">Speak <u>English</u> With <br>Confidence</h1>
+          <p class="mainBannerContainerSubText">
+            Let's make effective use of technology. Stay <br>
+            connected. Everything through Whatsapp
+          </p>
+          <p class="mainBannerContainerSubTextMobile">
+            Let's make effective use <br>
+            of technology.Stay <br>connected. Everything <br>through Whatsapp
+          </p>
+          <button class="contactUsButton absolutePosition" onclick="callPlanPage()">
+            <div class="contactUsButtonInner">
+              <p class="contactUsText" style="text-align: center;">Join Now</p>
+              <!-- <img src="assets/images/whatsapp.png" alt="whatsapp" id="whatsapp" /> -->
+            </div>
+          </button>
+    
+          <div class="mainBannerOuter">
+            <img src="img/img5.jpg" alt="mainBanner" class="mainBannerContainerImage">
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="mainContainerCard">
+          <div class="container">
+            <div class="mainImageInnerDiv">
+              <h2 style="color:#181743;text-align: center;text-size-adjust: 30px;"><u>English </u> + <u>Communication</u> Improvement Platform</h2>
+              <p style="text-align: center;font-size: 16px;font-weight: 400;">
+                No matter where you are, If you have WHATSAPP, you <br>
+                are on board to learn english
+              </p>
+            </div>
+    
+        
+            <div class="centerElement">
+              <img src="img/wfq5bykt.png" alt="plan" class="planImage">
+            </div>
+    
+            <div class="planOuter">
+              <button class="joinButton" onclick="callPlanPage()">
+                <p class="joinButtonText" style="text-align: center;">Enroll Now</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="sectionSeven">
+          <div class="trainerTextLayer">
+            <h2 class="trainerText">Meet Our Trainers</h2>
+            <p class="trainerSubText">We help to grow fluently</p>
+          </div>
+          <div class="feedbackContainer">
+    
+            <div class="trainerCard">
+              <div class="trainerPhoto">
+                <img src="img/76avlekh.png" alt="trainerPhoto" class="trainerImage">
+              </div>
+              <div class="trainerDetails">
+                <h4 class="trainerDetailsText">Akash Rajashekar</h4>
+                <p class="trainerDetailsSubText">TL at Citi bank</p>
+                <a href="https://www.linkedin.com/in/akash-rajashekar-1a161579/" target="_blank">
+                  <img src="img/7oucgtum.png" class="linkedinImage">
+                </a>
+              </div>
+            </div>
+    
+            <div class="trainerCard">
+              <div class="trainerPhoto">
+                <img src="img/n10yb0ba.png" alt="trainerPhoto" class="trainerImage">
+              </div>
+              <div class="trainerDetails">
+                <h4 class="trainerDetailsText">Dharshini M</h4>
+                <p class="trainerDetailsSubText">Freelancer</p>
+                <!-- <a href="#" target="_blank"> -->
+                <img src="img/7oucgtum.png" class="linkedinImage">
+                <!-- </a> -->
+              </div>
+            </div>
+    
+            <div class="trainerCard">
+              <div class="trainerPhoto">
+                <img src="img/deny4l0u.png" alt="trainerPhoto" class="trainerImage">
+              </div>
+              <div class="trainerDetails">
+                <h4 class="trainerDetailsText">Rose Alphonse</h4>
+                <p class="trainerDetailsSubText">Senior Service Associate at Global Dial Services</p>
+                <img src="img/7oucgtum.png" class="linkedinImage">
+              </div>
+            </div>
+    
+            <div class="trainerCard">
+              <div class="trainerPhoto">
+                <img src="img/flia1cxl.png" alt="trainerPhoto" class="trainerImage">
+              </div>
+              <div class="trainerDetails">
+                <h4 class="trainerDetailsText">Divya Abraham</h4>
+                <p class="trainerDetailsSubText">Financial Analyst at PayPal private limited</p>
+                <img src="img/7oucgtum.png" class="linkedinImage">
+              </div>
+            </div>
+    
+            <div class="trainerCard">
+              <div class="trainerPhoto">
+                <img src="img/c2piv5oh.png" alt="trainerPhoto" class="trainerImage">
+              </div>
+              <div class="trainerDetails">
+                <h4 class="trainerDetailsText">Ronisha Ramamurthy</h4>
+                <p class="trainerDetailsSubText">R&amp;D Associate</p>
+                <img src="img/7oucgtum.png" class="linkedinImage">
+              </div>
+            </div>
+    
+            <div class="trainerCard">
+              <div class="trainerPhoto">
+                <img src="img/p83h9t5e.png" alt="trainerPhoto" class="trainerImage">
+              </div>
+              <div class="trainerDetails">
+                <h4 class="trainerDetailsText">Vinutha S</h4>
+                <p class="trainerDetailsSubText">Project coordinator at Indegene</p>
+                <img src="img/7oucgtum.png" class="linkedinImage">
+              </div>
+            </div>
+    
+          </div>
+    
+          <div class="feedbackContainerViewall">
+            <p style="font-size:larger;">And 5 more ...</p>
+          </div>
+        </div>
+        <br>
+      </section>
+      <section>
+        <div class="sectionFive mobile">
+          <div class="sectionFiveInnerLeft">
+            <div class="sectionFiveImage">
+              <img src="img/p8byzih7.png" class="sectionFiveImage">
+            </div>
+          </div>
+          <div class="sectionFiveInnerRight" style="display: flex;">
+            <h2>Become a <u>part time trainer</u> at Spiaon</h2>
+            <p>
+              We offer a 100% remote working environment where you have the freedom to become the best possible version of
+              yourself—in both your
+              professional and private life.
+            </p>
+            <p>Help others, get paid.</p>
+            <button onclick="location.href ='https://docs.google.com/forms/d/e/1FAIpQLSfVe6UWI3HdU99tTEYSrlAv-igx11yAngLY7VrAS4LJWekyOQ/viewform';">Click To Apply</button>
+          </div>
+        </div>
+      </section>
+      <footer id="contact">
+        <div class="footerContainer">
+          <div class="brandLogoOuterFooter">
+            <img src="img/image1.png"  style="width: 400%; height: 80px;"  class="applogoImage2">
+          </div>
+    
+          <div class="footerInner">
+            <h2>Connect With Us</h2>
+            <p>
+              Reach us at
+              <a href="mailto:contact@myenglishfriend.in&amp;subject=New Joinee&amp; body= HI Team">contact@Spiaon.in</a>
+              or through
+              <a href="https://wa.me/+919025193307" target="_blank" id="whatsappFunction">+91 9025193307</a>
+              <img class="footerWhatsapp" alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iNDgiIGhlaWdodD0iNDgiCnZpZXdCb3g9IjAgMCA0OCA0OCIKc3R5bGU9IiBmaWxsOiMwMDAwMDA7Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNC45LDQzLjNsMi43LTkuOEM1LjksMzAuNiw1LDI3LjMsNSwyNEM1LDEzLjUsMTMuNSw1LDI0LDVjNS4xLDAsOS44LDIsMTMuNCw1LjZDNDEsMTQuMiw0MywxOC45LDQzLDI0CWMwLDEwLjUtOC41LDE5LTE5LDE5YzAsMCwwLDAsMCwwaDBjLTMuMiwwLTYuMy0wLjgtOS4xLTIuM0w0LjksNDMuM3oiPjwvcGF0aD48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNC45LDQzLjhjLTAuMSwwLTAuMy0wLjEtMC40LTAuMWMtMC4xLTAuMS0wLjItMC4zLTAuMS0wLjVMNywzMy41Yy0xLjYtMi45LTIuNS02LjItMi41LTkuNglDNC41LDEzLjIsMTMuMyw0LjUsMjQsNC41YzUuMiwwLDEwLjEsMiwxMy44LDUuN2MzLjcsMy43LDUuNyw4LjYsNS43LDEzLjhjMCwxMC43LTguNywxOS41LTE5LjUsMTkuNWMtMy4yLDAtNi4zLTAuOC05LjEtMi4zCUw1LDQzLjhDNSw0My44LDQuOSw0My44LDQuOSw0My44eiI+PC9wYXRoPjxwYXRoIGZpbGw9IiNjZmQ4ZGMiIGQ9Ik0yNCw1YzUuMSwwLDkuOCwyLDEzLjQsNS42QzQxLDE0LjIsNDMsMTguOSw0MywyNGMwLDEwLjUtOC41LDE5LTE5LDE5aDBjLTMuMiwwLTYuMy0wLjgtOS4xLTIuM0w0LjksNDMuMwlsMi43LTkuOEM1LjksMzAuNiw1LDI3LjMsNSwyNEM1LDEzLjUsMTMuNSw1LDI0LDUgTTI0LDQzTDI0LDQzTDI0LDQzIE0yNCw0M0wyNCw0M0wyNCw0MyBNMjQsNEwyNCw0QzEzLDQsNCwxMyw0LDI0CWMwLDMuNCwwLjgsNi43LDIuNSw5LjZMMy45LDQzYy0wLjEsMC4zLDAsMC43LDAuMywxYzAuMiwwLjIsMC40LDAuMywwLjcsMC4zYzAuMSwwLDAuMiwwLDAuMywwbDkuNy0yLjVjMi44LDEuNSw2LDIuMiw5LjIsMi4yCWMxMSwwLDIwLTksMjAtMjBjMC01LjMtMi4xLTEwLjQtNS44LTE0LjFDMzQuNCw2LjEsMjkuNCw0LDI0LDRMMjQsNHoiPjwvcGF0aD48cGF0aCBmaWxsPSIjNDBjMzUxIiBkPSJNMzUuMiwxMi44Yy0zLTMtNi45LTQuNi0xMS4yLTQuNkMxNS4zLDguMiw4LjIsMTUuMyw4LjIsMjRjMCwzLDAuOCw1LjksMi40LDguNEwxMSwzM2wtMS42LDUuOGw2LTEuNmwwLjYsMC4zCWMyLjQsMS40LDUuMiwyLjIsOCwyLjJoMGM4LjcsMCwxNS44LTcuMSwxNS44LTE1LjhDMzkuOCwxOS44LDM4LjIsMTUuOCwzNS4yLDEyLjh6Ij48L3BhdGg+PHBhdGggZmlsbD0iI2ZmZiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTkuMywxNmMtMC40LTAuOC0wLjctMC44LTEuMS0wLjhjLTAuMywwLTAuNiwwLTAuOSwwcy0wLjgsMC4xLTEuMywwLjZjLTAuNCwwLjUtMS43LDEuNi0xLjcsNAlzMS43LDQuNiwxLjksNC45czMuMyw1LjMsOC4xLDcuMmM0LDEuNiw0LjgsMS4zLDUuNywxLjJjMC45LTAuMSwyLjgtMS4xLDMuMi0yLjNjMC40LTEuMSwwLjQtMi4xLDAuMy0yLjNjLTAuMS0wLjItMC40LTAuMy0wLjktMC42CXMtMi44LTEuNC0zLjItMS41Yy0wLjQtMC4yLTAuOC0wLjItMS4xLDAuMmMtMC4zLDAuNS0xLjIsMS41LTEuNSwxLjljLTAuMywwLjMtMC42LDAuNC0xLDAuMWMtMC41LTAuMi0yLTAuNy0zLjgtMi40CWMtMS40LTEuMy0yLjQtMi44LTIuNi0zLjNjLTAuMy0wLjUsMC0wLjcsMC4yLTFjMC4yLTAuMiwwLjUtMC42LDAuNy0wLjhjMC4yLTAuMywwLjMtMC41LDAuNS0wLjhjMC4yLTAuMywwLjEtMC42LDAtMC44CUMyMC42LDE5LjMsMTkuNywxNywxOS4zLDE2eiIgY2xpcC1ydWxlPSJldmVub2RkIj48L3BhdGg+PC9zdmc+">
+            </p>
+          </div>
+          <p class="questions">
+            Have Questions? Check our
+            <u><a class="feedbackRoute" href="#">Frequently Asked Questions</a></u>
+          </p>
+          <div class="empty"></div>
+        </div>
+      </footer>
+      <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyAUcrjjJkk79va5CXGeCSSrEae6Txn77fU",
+          authDomain: "spiaon.firebaseapp.com",
+          projectId: "spiaon",
+          storageBucket: "spiaon.appspot.com",
+          messagingSenderId: "452713246205",
+          appId: "1:452713246205:web:3a9f01b50a98071a3d7d94",
+          measurementId: "G-CF406ZCZRV"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html> 
