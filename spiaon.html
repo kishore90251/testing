@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spiaon | Plans</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/logo1.jpg" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/logo1.jpg" />
+  <link rel="stylesheet"  href="css/step.css" />
+  <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js" defer></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-database.js" defer></script>
+  <script src="js/firebase.js" defer=""></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TY4SLTQ5N2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-TY4SLTQ5N2');
+  </script>
+</head>
+
+<body>
+    <div class="headerMainCards mobileheader">
+      <img src="img/my.jpg" class="mobileheaderImage" onclick="callHomePage()">
+    </div>
+    <section style="margin-top:14px;">
+      <marquee direction="left" scrollamount="10" style="margin: 0" id="displaySlotsBooked">
+        <p style="margin: 0px; font-size: 20px; color: green;" id="infoText">Enrolment opened. Please contact support team for enquiries🙏</p>
+      </marquee>
+    </section>
+    <section>
+      <p class="plans__joinus">Join us by completing the payment</p>
+    </section>
+  
+    <!-- <section>
+      <div class="plansInputFormContainer">
+        <div class="plansInputForm">
+          <p class="customPlansLabel">Name</p>
+          <input type="text" class="customPlansInput" />
+        </div>
+  
+        <div class="plansInputForm">
+          <p class="customPlansLabel">Phone Number</p>
+          <input type="text" class="customPlansInput" />
+        </div>
+      </div>
+    </section> -->
+  
+    <section>
+      <p class="plans__setAgenda">Set your agenda</p>
+    </section>
+  
+    <section>
+      <div class="centerItems">
+        <div class="plans__durationInputContainer">
+          <input type="text" class="plans__durationInput" value="   45 mins per day" readonly="">
+          <input type="text" class="plans__durationInput" value="   3 days per week (Alternative days)" readonly="">
+        </div>
+      </div>
+    </section>
+  
+    <section class="PaymentContainer">
+      <div class="paymentOuter">
+        <div class="paymentInner">
+          <div class="paymentRadioButton" id="type1" style="background-color: rgb(255, 255, 255); border-block-color: rgb(149, 147, 147); width: 90%;">
+            <div class="Plans_customBox" onclick="checkboxColorChange('type1')" id="type1border" style="border: 1px solid rgb(149, 147, 147);">
+              <div class="Plans_DurationMonthsContainer">
+                <p class="Plans__Months">1 months+10days</p>
+                <div class="Plans__discountContainer">
+                  <p class="Plans__discount">35% off</p>
+                  <p class="Plans__discount">save Rs.301</p>
+                </div>
+              </div>
+              <div class="Plans_DurationPriceContainer">
+                <p class="Plans__originalPrice"><span class="Plans__priceStrike">₹1200</span>₹1000</p>
+                <p class="Plans__PriceGST">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+GST</p>
+              </div>
+            </div>
+          </div>
+        <div class="paymentRadioButton" id="type2" style="background-color: rgb(255, 255, 180); border: 0px; width: 100%;">
+            <div class="Plans_customBox" onclick="checkboxColorChange('type2')" id="type2border" style="border: 2px solid rgb(229, 194, 108);">
+              <div class="Plans_DurationMonthsContainer">
+                <p class="Plans__Months">2 months</p>
+                <div class="Plans__discountContainer">
+                  <p class="Plans__discount">8% off</p>
+                  <p class="Plans__discount">save Rs.1,261</p>
+                </div>
+              </div>
+              <div class="Plans_DurationPriceContainer">
+                <p class="Plans__originalPrice"><span class="Plans__priceStrike">₹2000</span>₹1600</p>
+                <p class="Plans__PriceGST">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+GST</p>
+              </div>
+            </div>
+          </div>
+          <div class="paymentRadioButton" id="type3" style="background-color: rgb(255, 255, 255); border-block-color: rgb(149, 147, 147); width: 90%;">
+            <div class="Plans_customBox" onclick="checkboxColorChange('type3')" id="type3border" style="border: 1px solid rgb(149, 147, 147);">
+              <div class="Plans_DurationMonthsContainer">
+                <p class="Plans__Months">3 months</p>
+                <div class="Plans__discountContainer">
+                  <p class="Plans__discount">10% off</p>
+                  <p class="Plans__discount">save Rs.2,627</p>
+                </div>
+              </div>
+              <div class="Plans_DurationPriceContainer">
+                <p class="Plans__originalPrice"><span class="Plans__priceStrike">₹3500</span>₹2400</p>
+                <p class="Plans__PriceGST">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+GST</p>
+              </div>
+            </div>
+          </div>
+  
+        <!---  <table class="Plans__priceTotalTable">
+           <tr>
+            <td>No. of months</td>
+             <td>
+               <p class="Plans__tablePrice" id="planNoOfMonth">--</p>
+            </td>
+           </tr>
+          <tr>
+             <td>Actual Fee</td>
+            <td>
+             <p class="Plans__tablePrice" id="planActualFee">--</p>
+             </td>
+           </tr>
+         <tr>
+             <td id="planAdditionalSavingsPercentage">Additional Savings (8%)</td>
+              <td>
+                <p class="Plans__tablePrice" id="planAdditionalSavings">--</p>
+             </td>
+           </tr>
+            <tr>
+              <td>GST (18%)</td>
+            <td>
+               <p class="Plans__tablePrice" id="planGST">--</p>
+             </td>
+           </tr>
+            <tr>
+              <td style="font-weight:bold">Total</td>
+            <td>
+              <p style="font-weight:bold" class="Plans__tablePrice" id="planTotal">--</p>
+             </td>
+           </tr>
+          </table>-->
+          
+          <div class="basicDetailsInnerSection customCheckBoxCenter" style="margin-top:30px">
+            <input type="checkbox" class="basicDetailscheckbox" name="Accepted" value="Accepted" required="" id="basicDetailscheckbox">
+            <span class="basicDetailscheckboxText">
+              I accept the <i class="basicDetailsTandC" id="basicDetailTandCButton">Terms and Conditions</i></span>
+          </div>
+  
+  
+          <div class="paymentSubmitButtonOuter">
+            <button class="paymentSubmitButton" id="paymentSubmitButton" onclick="callRazorypay()" Enable="" style="background-color: green;"> Make payment</button>
+          </div>
+  
+          <!-- Modal -->
+  
+          <div id="TandCModal" class="TCmodal">
+            <!-- Modal content -->
+            <div class="basicDetailsModalContent" style="overflow-y: scroll; max-height: 70%; margin-bottom: 50px">
+              <div>
+                <span class="close">×</span>
+                <h2 style="text-align: center; margin-bottom: 10px;">Terms and Conditions</h2>
+              </div>
+              <p>
+                By accessing and using this service, you accept and agree to be bound by the terms and provision of this
+                agreement. In addition, when using these services, you shall be subject to any posted guidelines or rules
+                applicable to such services.
+              </p>
+              <ul>
+                <li>
+                  REFUND will not be given under any ANY circumstances.
+                </li>
+                <li>
+                  Misbehaving to tutors in any form will not be tolerated and the course will be terminated immediately.
+                </li>
+                <li>
+                  Video call is mandatory.
+                </li>
+                <li>
+                  A student can take only 1 LEAVE per week by informing the tutor in prior.
+                </li>
+                <li>
+                  Missed class should be compensated in the same week itself. Classes cannot be carried forward to the
+                  next week.
+                </li>
+                <li>
+                  Being ABSENT for a class without informing the tutor will be considered as class taken and won't be
+                  compensated.
+                </li>
+                <li>
+                  In a rare case scenario, classes can be put on HOLD for a maximum of 2 weeks only by informing the
+                  management.
+                </li>
+                <li>
+                  An Assessment will be conducted at the end of the course.
+                </li>
+                <li>
+                  The course can be extended by opting for ADD-ON pack, before or after the assessment.
+                </li>
+              </ul>
+              <br>
+            </div>
+          </div>
+  
+          <!-- Modal -->
+  
+        </div>
+      </div>
+    </section>
+  
+    <script>
+      var modal = document.getElementById("TandCModal");
+      var btn = document.getElementById("basicDetailTandCButton");
+      var span = document.getElementsByClassName("close")[0];
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  
+  
+  
+  
+  </body>
