@@ -1,0 +1,1044 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+marquee span {
+  margin-right: 20px;
+}
+
+.main_Header_text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  margin-top: 5px;
+}
+
+.main_Header_Subtext {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  margin-top: 5px;
+}
+
+.centerItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardSection {
+  width: 320px;
+  height: 100%;
+  /* opacity: 0.4; */
+  border: 1px solid #959393;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 25px;
+}
+
+.cardSectionSecondCard {
+  width: 310px;
+  height: 100%;
+  border: 1px solid #e5c26c;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+  background: rgba(255, 249, 236, 1);
+}
+
+@media (max-width: 900px) {
+  .cardSection,
+  .secondBoxOuterLayer,
+  .cardSectionSecondCard {
+    width: 320px !important;
+  }
+
+  .cardsCollection {
+    width: 90% !important;
+  }
+
+  .thirdCard {
+    order: 3;
+  }
+
+  .firstOrder {
+    order: 1;
+  }
+
+  .fouthCard {
+    order: 4;
+  }
+
+  .quizSub {
+    padding-left: 15px !important ;
+  }
+
+  .quizSubQuestions {
+    font-size: 18px !important;
+  }
+
+  .webViewAdvanced {
+    display: none !important;
+  }
+
+  .mobileViewAdvanced {
+    display: flex !important;
+  }
+
+  .mobileheader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobileheaderImage {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .main_Header_text {
+    font-size: 22px !important;
+    line-height: 20px !important;
+  }
+
+  .main_Header_Subtext {
+    font-size: 16px !important;
+    line-height: 10px !important;
+  }
+}
+
+@media (max-width: 1190px) {
+  .cardsCollection {
+    width: 100% !important;
+  }
+}
+
+.cardPersonImage {
+  width: 80%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px 40px 0px 40px;
+}
+
+.cardPersonImageIntermediate {
+  width: 80%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 40px 0px 40px;
+}
+
+.cardPersonIcon {
+  width: 25%;
+  height: 60px;
+}
+
+.cardPersonImageContent {
+  width: 70%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cardPersonImageContentSecond {
+  width: 90%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cardPersonImageContentTitle {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: #263238;
+  padding: 0;
+  margin: 0;
+}
+
+.cardPersonImageContentSubTitle {
+  font-weight: 400;
+  font-size: 12px;
+  color: #000000;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.cardPrices {
+  width: 75%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cardPrices > p {
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+}
+
+.cardPricesPrice {
+  font-size: 22px !important;
+}
+
+.cardEnrollButton Button {
+  width: 139px;
+  height: 46px;
+  background: #269cdd;
+  border-radius: 6px;
+  outline: none;
+  border: 0;
+  color: white;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+table td {
+  border: 4px solid white;
+  border-collapse: collapse;
+}
+
+.secondCardTable td {
+  border: 4px solid rgba(255, 249, 236, 1);
+}
+
+.cardsCollection {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.containerCards {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+table tr td img {
+  width: 25px;
+  height: 25px;
+}
+
+table {
+  margin: 10px;
+}
+
+.secondCard {
+  position: relative;
+}
+
+.cardStar {
+  position: absolute;
+  left: -5px;
+  top: 9px;
+}
+
+.secondCardOuter {
+  width: 396px;
+  height: 226px;
+  border: 1px solid #959393;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.secondBoxOuter {
+  width: 310px;
+  height: 170px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  opacity: 0.4;
+  border: 1px solid #959393;
+  margin: 20px;
+}
+
+.secondBoxOuterLayer {
+  width: 310px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.secondBoxOuter__Image {
+  width: 60px;
+  height: 60px;
+  margin-top: 20px;
+}
+
+.secondBoxOuter__Advanced {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 5px;
+  color: #263238;
+}
+
+.secondBoxOuter__CommimgSoon {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 5px;
+  color: #959393;
+  margin-bottom: 40px;
+}
+
+.cardEnrollButton button {
+  cursor: pointer;
+  width: 139px;
+  height: 42x;
+}
+
+.footercard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0px 50px 0px;
+}
+
+.footerInner {
+  width: 80%;
+  height: 100%;
+}
+
+.footer_text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #959393;
+  opacity: 0.7;
+}
+
+.headerMainCards {
+  width: 100%;
+  height: 90px;
+  background: #ffffff;
+  box-shadow: 0px 4px 50px 20px rgba(0, 0, 0, 0.05);
+}
+
+.headerMainCards img {
+  width: 126px;
+  height: 80px;
+  margin-left: 50px;
+  padding: 10px;
+}
+
+.quizCard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.quizAnswer {
+  display: flex;
+  width: 30%;
+}
+
+.quizAnswer > div {
+  margin: 0px 40px 0px 40px;
+}
+
+.quizLine {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quizInnerLine {
+  width: 80%;
+  height: 100%;
+}
+
+.quizInnerLine hr {
+  opacity: 0.1;
+  margin: 0;
+}
+
+.quizRadio {
+  cursor: pointer;
+}
+
+.quizHeading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.quizHeadingInner {
+  width: 70%;
+  height: 100%;
+}
+
+.quizHeadingInnerText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.quixText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3.1vw;
+  line-height: 20px;
+  color: #181743;
+  margin: 10px;
+}
+
+.quizSubText {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.7vw;
+  line-height: 36px;
+  color: #181743;
+  margin-left: 5.12vw;
+}
+
+.quixTextIcon {
+  font-size: 3.55vw !important;
+  cursor: pointer;
+}
+
+.quizQuestion {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  color: #181743;
+}
+
+.quizSubQuestions {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  color: #181743;
+}
+
+.quizQuestionOuter {
+  width: 70%;
+  height: 100%;
+}
+
+.quizAnswer div span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  color: #181743;
+}
+
+.progressBar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Progressimage {
+  width: 50%;
+  height: 50%;
+  margin: 10px;
+}
+
+.quizOuter {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  .quizOuter {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .quizAnswer > div {
+    margin: 2px;
+  }
+
+  .quizQuestion {
+    padding-left: 10px;
+  }
+
+  .quizHeadingInner {
+    width: 100% !important;
+  }
+
+  .quixText {
+    font-size: 18px !important;
+    line-height: 15px;
+  }
+
+  .quizSubText {
+    font-size: 15px !important;
+    line-height: 20px;
+  }
+
+  .quixTextIcon {
+    font-size: 30px !important;
+  }
+
+  .Progressimage {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .paymentInner {
+    width: 80% !important;
+  }
+
+  .basicDetailsInner,
+  .finalStepInner,
+  .onboardInner {
+    width: 90% !important;
+  }
+
+  .basicDetailscheckboxText,
+  .finalStepcheckboxText {
+    font-size: 15px !important;
+  }
+
+  .finalStepInnerSelectSectionField {
+    width: 100% !important;
+  }
+}
+
+.paymentOuter,
+.basicDetailsOuter,
+.finalStepOuter,
+.onboardOuter {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paymentInner {
+  width: 45%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.paymentRadioButton {
+  width: 90%;
+  height: 68px;
+  /* border: 1px solid #959393; */
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.paymentWithinIndia,
+.paymentWithinOutsideIndia {
+  width: 25px;
+  height: 25px;
+  margin-left: 23px;
+}
+
+.paymentSubmitButtonOuter {
+  width: 100%;
+  height: 68px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin-top: 8px;
+  margin-bottom:100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.paymentSubmitButton {
+  width: 100%;
+  height: 48px;
+  background: #269cdd;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.basicDetailsInner,
+.finalStepInner,
+.onboardInner {
+  width: 50%;
+  height: 50%;
+}
+
+.basicDetailsInnerSection label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #181743;
+}
+
+.finalStepInnerSection label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #181743;
+}
+
+.basicDetailsInnerSectionField,
+.finalStepInnerSectionField {
+  width: 100%;
+  height: 46px;
+  background: #ffffff;
+  border: 1px solid #e9e9e9;
+  box-sizing: border-box;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+}
+
+.finalStepInnerSelectSectionField {
+  width: 50%;
+  height: 46px;
+  background: #ffffff;
+  border: 1px solid #e9e9e9;
+  box-sizing: border-box;
+  border-radius: 8px;
+  outline: none;
+}
+
+.finalStepTime {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #181743;
+  margin-left: 15px;
+}
+
+.basicDetailscheckbox,
+.finalStepcheckbox {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
+
+.basicDetailscheckboxText,
+.finalStepcheckboxText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #181743;
+}
+
+.customCheckBoxCenter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.basicDetailsTandC,
+.finalStepTandC {
+  font-style: normal;
+  color: #269cdd;
+}
+
+.basicDetailsSubmitButtonOuter,
+.finalStepSubmitButtonOuter {
+  width: 100%;
+  height: 68px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.basicDetailsSubmitButton,
+.finalStepSubmitButton {
+  width: 95%;
+  height: 48px;
+  background: #269cdd;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.basicDetailsTandC,
+.finalStepTandC {
+  cursor: pointer;
+}
+
+.finalStepReasonField {
+  width: 100%;
+  height: 112px;
+  background: #ffffff;
+  border: 1px solid #e9e9e9;
+  box-sizing: border-box;
+  border-radius: 8px;
+  outline: none;
+}
+
+.finalStepOptionTag {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  color: #181743;
+}
+
+.TCmodal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.basicDetailsModalContent {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#overlayPayment {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#paymentText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 24px;
+  color: white;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.webViewAdvanced {
+  display: flex;
+}
+
+.mobileViewAdvanced {
+  display: none;
+}
+
+.subcategoryPoints {
+  font-size: 14px;
+}
+
+.plans__joinus {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  color: #000000;
+  margin: 5px;
+}
+.plansInputForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.plansInputFormContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.customPlansInput {
+  width: 30rem;
+  height: 46px;
+  background: #ffffff;
+  border: 1px solid #e9e9e9;
+  border-radius: 8px;
+}
+
+.customPlansLabel {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #181743;
+}
+
+.plans__setAgenda {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #269cdd;
+  text-align: center;
+}
+
+.plans__durationInputContainer {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.plans__durationInput {
+  width: 27rem;
+  height: 46px;
+  background: #ffffff;
+  border: 1.2px solid #e9e9e9;
+  border-radius: 9.767px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.534px;
+  line-height: 18px;
+  align-items: center;
+  color: #959393;
+}
+
+.Plans_customBox {
+  width: 100%;
+  height: 68px;
+  border: 1px solid #f3f3f3;
+  border-radius: 4.15842px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.Plans_DurationMonthsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.Plans_DurationPriceContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Plans__Months {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #181743;
+  margin: 0;
+}
+
+.Plans__discount {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #959393;
+  margin: 0;
+}
+
+.Plans__originalPrice {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 19px;
+  color: #181743;
+  margin: 2px;
+}
+
+.Plans__PriceGST {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #959393;
+  margin: 2px;
+}
+
+.Plans__priceStrike {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px !important;
+  line-height: 14px;
+  text-decoration-line: line-through;
+  color: #bf0000;
+  padding: 5px;
+}
+.PaymentContainer{
+  margin-top: 30px;
+}
+
+.Plans__discountContainer{
+  display: flex;
+  gap:10px;
+}
+
+.Plans__tablePrice{
+  margin:0;
+  padding: 0;
+}
+
+.Plans__priceTotalTable{
+  width: 60%;
+}
+
+@media (max-width: 700px) {
+  .customPlansInput {
+    width: 20rem;
+    height: 46px;
+  }
+  .plans__joinus {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 10px;
+  }
+  .plans__setAgenda {
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 15px;
+  }
+  .Plans_DurationMonthsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .Plans__priceTotalTable{
+    width: 100%;
+  }
+}
+
